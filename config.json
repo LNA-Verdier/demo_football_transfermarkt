@@ -1,0 +1,7 @@
+{
+  "root_path": "s3a://loicverdier/",
+  "landing_zone": "landing_zone/football_transfermarkt/",
+  "bronze_zone": "bronze/football_transfermarkt/",
+  "silver_zone": "silver/football_transfermarkt/",
+  "gold_zone": "gold/football_transfermarkt/"
+}
