@@ -1,2 +1,0 @@
-!pip install pyspark
-!pip install boto3

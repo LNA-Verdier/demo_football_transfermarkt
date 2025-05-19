@@ -15,13 +15,7 @@ def create_spark_session():
         .getOrCreate()
     return spark
 
-with open("config.json", "r") as f:
-    config = json.load(f, object_hook=lambda d: SimpleNamespace(**d))
 
-'''
-s3 = boto3.client("s3",endpoint_url = 'https://'+'minio.lab.sspcloud.fr',
-                  aws_access_key_id= os.environ["AWS_ACCESS_KEY_ID"], 
-                  aws_secret_access_key= os.environ["AWS_SECRET_ACCESS_KEY"], 
-                  aws_session_token = os.environ["AWS_SESSION_TOKEN"]
-                 )
-'''
+config_path = os.path.join(os.path.dirname(__file__), "..", "inputs", "s3-paths.json")
+with open(os.path.abspath(config_path), "r") as f:
+    config = json.load(f, object_hook=lambda d: SimpleNamespace(**d))

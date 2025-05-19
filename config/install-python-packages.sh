@@ -1,0 +1,1 @@
+pip install -r ${GIT_REPO}/inputs/requirements.txt
