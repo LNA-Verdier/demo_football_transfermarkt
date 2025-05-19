@@ -33,3 +33,5 @@ ggplot(top_20, aes(x = reorder(club_year, total_purchases), y = total_purchases,
     y = "Total achats (€)"
   ) +
   theme_minimal()
+
+# TEST PUSH
